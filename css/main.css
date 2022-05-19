@@ -4,11 +4,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'ProximaNova-Regular';
+    line-height: 20px;
 }
 
-div {
+/* div {
     border: 1px dashed rgba(161, 159, 159, 0.596);
-}
+} */
 
 .wrapper {
     width: 100%;
@@ -28,15 +29,17 @@ div {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #dcdcdc ;
 }
 
 .container {
     flex-grow: 1;
 }
 
-.main-title h1 {
+.main-title>h1 {
     display: block;
     font-size: 14px;
+    color: #dcdcdc;
     font-weight: normal;
     margin-top: 50px;
 }
@@ -52,5 +55,5 @@ div {
     color: #fff;
     text-align: center;
     font-size: 14px;
-
+    margin: 50px 15px 15px 15px;
 }
