@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
+@font-face {
+    font-family: "ProximaNova-Bold";
+    src: url("../fonts/ProximaNova-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+div {
+    border: 1px dashed rgba(161, 159, 159, 0.596);
+}
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-photo {
+    border-radius: 50%;
+    width:262px;
+    position: relative;
+    top:135px;
+
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.container {
+    width: 992px;
+}
+
+
+
+.main-title h1 {
+    font-size: 14px;
+    font-family: 'ProximaNova-Regular';
+    font-weight: normal;
+    
+}
