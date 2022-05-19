@@ -14,7 +14,6 @@ div {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
 }
 
 .my-photo {
@@ -31,7 +30,6 @@ div {
 }
 
 .container {
-    /* width: 992px; */
     flex-grow: 1;
 }
 
@@ -39,4 +37,17 @@ div {
     font-size: 14px;
     font-family: 'ProximaNova-Regular';
     font-weight: normal;
+    margin-top: 50px;
+}
+
+.btn {
+    display: block;
+    float: right;
+    min-width: 157px;
+    text-decoration: none;
+    border-radius: 18px;
+    padding: 4px;
+    background-color: #ffa414;
+    color: #fff;
+    text-align: center;
 }
