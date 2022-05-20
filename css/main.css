@@ -35,6 +35,11 @@ ul {
     top:-135px;
 }
 
+@media (max-width: 1042px) {
+    .my-photo{
+        display: none;
+    }
+}
 .main-title {
     display: flex;
     align-items: center;
@@ -129,5 +134,9 @@ ul {
 }
 
 
-
+@media (max-width: 1042px) {
+    .my-photo{
+        display: none;
+    }
+}
 
