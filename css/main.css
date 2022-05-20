@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'ProximaNova-Regular';
-    line-height: 20px;
+    line-height: 1.42857143;
 }
 
 /* div {
@@ -16,6 +16,7 @@ body {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .my-photo {
@@ -37,6 +38,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content:space-between;
+    max-width: 780px;
 }
 
 .main-title>h1 {
@@ -76,8 +78,31 @@ body {
     padding: 15px;
 }
 
+.nav-item:hover {
+    color:#49e0be;
+    border-bottom: 4px solid #3e4a4e;
+}
+
 .active {
     color:#49e0be;
     border-bottom: 4px solid #3e4a4e;
+}
+
+.content {
+    background-color: #3e4a4e;
+}
+
+.intro {
+    font-size: 42px;
+    color: #49e0be;
+    margin-top: 75px;
+    font-weight: 700;
+}
+
+.content-title>h3 {
+    font-size: 24px;
+    color: #6a808b;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
