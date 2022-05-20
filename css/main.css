@@ -7,9 +7,9 @@ body {
     line-height: 20px;
 }
 
-/* div {
+ div {
     border: 1px dashed rgba(161, 159, 159, 0.596);
-} */
+} 
 
 .wrapper {
     width: 100%;
@@ -34,7 +34,10 @@ body {
 
 .container {
     flex-grow: 1;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+
 }
 
 .main-title>h1 {
@@ -62,5 +65,17 @@ body {
 
 .btn:last-child {
     margin:  50px 0px 15px 15px;
+}
+
+.nav-item {
+    font-size: 16px;
+    text-decoration: none;
+    color:#3e4a4e;
+    padding: 15px;
+}
+
+.active {
+    color:#49e0be;
+    border-bottom: 4px solid #3e4a4e;
 }
 
