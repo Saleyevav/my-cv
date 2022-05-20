@@ -7,6 +7,11 @@ body {
     line-height: 1.42857143;
 }
 
+ul {
+    list-style-type:none;
+    padding-left: 0;
+}
+
 /* div {
     border: 1px dashed rgba(161, 159, 159, 0.596);
 }  */
@@ -89,7 +94,27 @@ body {
 }
 
 .content {
+    
+}
+
+.dark-theme {
     background-color: #3e4a4e;
+    color: #fff;
+}
+.dark-theme span{
+    color: #49e0be;
+}
+
+.dark-theme h3 {
+    font-size: 24px;
+    color: #6a808b;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.dark-theme a {
+    color: #14bfff;
+    text-decoration: none;
 }
 
 .intro {
@@ -99,10 +124,6 @@ body {
     font-weight: 700;
 }
 
-.content-title>h3 {
-    font-size: 24px;
-    color: #6a808b;
-    font-weight: 400;
-    text-transform: uppercase;
-}
+
+
 
