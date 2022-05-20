@@ -32,7 +32,7 @@ ul {
     border-radius: 50%;
     width:262px;
     position: relative;
-    top:135px;
+    top:-135px;
 }
 
 .main-title {
