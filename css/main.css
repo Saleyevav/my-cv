@@ -35,11 +35,6 @@ ul {
     top:-135px;
 }
 
-@media (max-width: 1042px) {
-    .my-photo{
-        display: none;
-    }
-}
 .main-title {
     display: flex;
     align-items: center;
@@ -133,10 +128,34 @@ ul {
     font-weight: 700;
 }
 
+@media (max-width: 395px) {
+    .btns,.nav{
+        flex-direction: column;
+    }
+}
 
-@media (max-width: 1042px) {
+@media (max-width: 622px) {
+    .main-title{
+        flex-direction: column;
+    }
+    .intro{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 861px) {
+    .wrapper{
+        flex-direction: column;
+    }
+    .content-title>h3{
+        margin:0;
+    }
+}
+
+@media  (max-width: 1042px) {
     .my-photo{
         display: none;
     }
 }
+
 
