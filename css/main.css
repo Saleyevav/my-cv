@@ -153,6 +153,13 @@ ul {
     .intro{
         font-size: 22px;
     }
+    .btn {
+        margin-top: 15px;
+    }
+
+    .btn:last-child {
+        margin-top: 15px;
+    }
 }
 
 @media (max-width: 861px) {
