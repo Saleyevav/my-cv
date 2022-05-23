@@ -179,6 +179,10 @@ ul {
     .btn:last-child {
         margin-top: 15px;
     }
+
+    .row {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 861px) {
