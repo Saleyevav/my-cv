@@ -12,6 +12,21 @@ ul {
     list-style-type:none;
     padding-left: 0;
     padding-bottom: 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* div {
@@ -103,10 +118,6 @@ ul {
     border-bottom: 4px solid #3e4a4e;
 }
 
-.content {
-    
-}
-
 .dark-theme {
     background-color: #3e4a4e;
     color: #fff;
@@ -124,6 +135,7 @@ ul {
 
 .dark-theme .container{
     border-top: 1px solid #dcdcdc ;
+    padding-top: 20px;
     padding-bottom: 80px;
 }
 .dark-theme a {
