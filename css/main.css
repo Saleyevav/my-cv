@@ -129,8 +129,20 @@ ul {
 }
 
 @media (max-width: 395px) {
-    .btns,.nav{
+    .btns{
         flex-direction: column;
+        align-items: baseline;       
+    }
+    .nav{
+        flex-direction: column; 
+    }
+
+    .btn {
+        margin-top: 15px;
+    }
+
+    .btn:last-child {
+        margin-top: 15px;
     }
 }
 
