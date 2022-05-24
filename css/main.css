@@ -19,6 +19,13 @@ ul {
     margin-bottom: 10px;
 }
 
+h3 {
+    font-size: 24px;
+    color: #61892F;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
 h5 {
     font-size: 14px;
     margin-top: 10px;
@@ -122,6 +129,11 @@ h6 {
     background-color: #222629;
     box-shadow: 5px 5px 10px #222629;
 }
+.container{
+    border-top: 1px solid #474B4F ;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
 
 .dark-theme {
     background-color: #222629;
@@ -163,6 +175,10 @@ h6 {
 
 .row .item:first-child{
     width: 66%;
+}
+
+.footer {
+    padding-top: 80px;
 }
 
 @media (max-width: 395px) {
