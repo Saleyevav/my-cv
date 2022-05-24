@@ -5,7 +5,6 @@ body {
     padding: 0;
     font-family: 'ProximaNova-Regular';
     line-height: 1.42857143;
-    box-sizing: border-box;
 }
 
 ul {
@@ -79,7 +78,7 @@ h6 {
     min-width: 157px;
     text-decoration: none;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px #54772a;
+    box-shadow: 5px 5px 10px #54772a;
     padding: 4px;
     background-color: #86C232;
     color: #fff;
@@ -111,15 +110,13 @@ h6 {
 
 .nav-item:hover {
     color:#86C232;
-    /* border-bottom: 4px solid #222629; */
-    box-shadow: 5px 5px 6px #222629;
+    box-shadow: 5px 5px 10px #222629;
 }
 
 .active {
     color:#86C232;
     background-color: #222629;
-    box-shadow: 5px 5px 6px #222629;
-    /* border-bottom: 4px solid #222629; */
+    box-shadow: 5px 5px 10px #222629;
 }
 
 .dark-theme {
