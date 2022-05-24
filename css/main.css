@@ -199,7 +199,7 @@ h6 {
     }
 }
 
-@media (max-width: 861px) {
+@media (max-width: 940px) {
     .wrapper{
         flex-direction: column;
     }
