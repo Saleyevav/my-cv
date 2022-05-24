@@ -66,7 +66,7 @@ h6 {
 
 .main-title>h1 {
     font-size: 14px;
-    color: #dcdcdc;
+    color: #474B4F;
     font-weight: normal;
     margin-top: 50px;
 }
@@ -78,19 +78,20 @@ h6 {
     display: block;
     min-width: 157px;
     text-decoration: none;
-    border-radius: 18px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #54772a;
     padding: 4px;
-    background-color: #ffa414;
+    background-color: #86C232;
     color: #fff;
     text-align: center;
     font-size: 14px;
     margin: 50px 15px 15px 15px;
 }
 .btn:hover {
-    background-color: #f3b858;
+    background-color: #61892F;
 }
 .btn:active {
-    background-color: #ca7d02;
+    background-color: #54772a;
 }
 
 .btn:last-child {
@@ -103,48 +104,53 @@ h6 {
     display: block;
     font-size: 16px;
     text-decoration: none;
-    color:#3e4a4e;
+    color:#222629;
     padding: 15px;
+    
 }
 
 .nav-item:hover {
-    color:#49e0be;
-    border-bottom: 4px solid #3e4a4e;
+    color:#86C232;
+    /* border-bottom: 4px solid #222629; */
+    box-shadow: 5px 5px 6px #222629;
 }
 
 .active {
-    color:#49e0be;
-    border-bottom: 4px solid #3e4a4e;
+    color:#86C232;
+    background-color: #222629;
+    box-shadow: 5px 5px 6px #222629;
+    /* border-bottom: 4px solid #222629; */
 }
 
 .dark-theme {
-    background-color: #3e4a4e;
+    background-color: #222629;
     color: #fff;
 }
 .dark-theme span{
-    color: #49e0be;
+    color: #86C232;
 }
 
 .dark-theme h3 {
     font-size: 24px;
-    color: #6a808b;
+    color: #61892F;
     font-weight: 400;
     text-transform: uppercase;
 }
 
 .dark-theme .container{
-    border-top: 1px solid #dcdcdc ;
+    border-top: 1px solid #474B4F ;
     padding-top: 20px;
     padding-bottom: 80px;
 }
+
 .dark-theme a {
-    color: #14bfff;
+    color: #1472ff;
     text-decoration: none;
 }
 
 .intro {
     font-size: 42px;
-    color: #49e0be;
+    color: #86C232;
     margin-top: 75px;
     font-weight: 700;
 }
