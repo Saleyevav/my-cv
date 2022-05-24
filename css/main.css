@@ -34,7 +34,6 @@ h6 {
 }  */
 
 .wrapper {
-    width: 100%;
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
@@ -178,6 +177,9 @@ h6 {
 }
 
 @media (max-width: 622px) {
+    .nav{
+        flex-direction: column; 
+    }
     .main-title{
         flex-direction: column;
     }
