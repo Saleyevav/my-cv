@@ -184,6 +184,13 @@ h6 {
     padding-top: 80px;
 }
 
+.menu-button{
+    background-color: #222629;
+    width: 60px;
+    height: 50px;
+    border-radius: 5px;
+}
+
 .mobile-nav {
     display: none;
 }
@@ -191,13 +198,35 @@ h6 {
 .mobile-nav .mobile-nav-items {
     overflow: hidden;
     height: 0px;
-    transition: height 0.5s;
+    transition: height .5s;
     display: flex;
     flex-direction: column;
 }
 
+.mobile-nav-item {
+    border-bottom: 1px solid #dcdcdc ;
+    font-size: 16px;
+    text-decoration: none;
+    color:#222629;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.mobile-nav-item:hover {
+    color:#86C232;
+}
+
 .mobile-nav:hover .mobile-nav-items {
-    height: 70px;
+    height: 150px;
+}
+
+.mobile-nav-container {
+    display: flex;
+    justify-content:space-between;
+}
+.my-mini-photo {
+    border-radius: 50%;
+    width:100px;
 }
 
 @media (max-width: 395px) {
