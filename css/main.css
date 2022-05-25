@@ -184,6 +184,22 @@ h6 {
     padding-top: 80px;
 }
 
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav .mobile-nav-items {
+    overflow: hidden;
+    height: 0px;
+    transition: height 0.5s;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-nav:hover .mobile-nav-items {
+    height: 70px;
+}
+
 @media (max-width: 395px) {
     
     .btns{
@@ -202,6 +218,8 @@ h6 {
         margin-top: 15px;
     }
 }
+
+
 
 @media (max-width: 622px) {
     .wrapper {
@@ -228,6 +246,15 @@ h6 {
     .row {
         flex-direction: column;
     }
+    
+    .nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
 }
 
 @media (max-width: 1071px) {
