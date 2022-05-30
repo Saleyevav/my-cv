@@ -1,25 +1,3 @@
-// через колесо
-// document.addEventListener('wheel', function (event) {
-//     // console.log('Текущая прокрутка сверху: ' + window.pageYOffset);
-//     element = document.getElementById("navBar");
-
-//     if (window.pageYOffset > 400) {
-//         if (event.deltaY > 0) {
-//             console.log("down " + event.deltaY);
-//             element.classList.remove("nav-fixed");
-//             element.classList.toggle("nav-hidden");
-//         } else if (event.deltaY < 0) {
-//             console.log("up " + event.deltaY);
-//             element.classList.remove("nav-hidden");
-//             element.classList.toggle("nav-fixed");
-//         }
-//     } else if (window.pageYOffset < 400) {
-//         element.classList.remove("nav-fixed");
-//         element.classList.remove("nav-hidden");
-//     }
-// });
-
-
 
 const throttle = (func, limit) => {
     let lastFunc;
@@ -43,15 +21,12 @@ const throttle = (func, limit) => {
 }
 
 
-
-
-
 let y = 0;
 document.addEventListener('scroll', throttle(function () {
     element = document.getElementById("navBar");
     let delta = window.pageYOffset - y;
-    
-    if (window.pageYOffset > 400) {
+
+    if (window.pageYOffset > 250) {
         if (delta > 0) {
             console.log("down " + delta);
             element.classList.remove("nav-fixed");
@@ -61,7 +36,7 @@ document.addEventListener('scroll', throttle(function () {
             element.classList.remove("nav-hidden");
             element.classList.add("nav-fixed");
         }
-    } else if (window.pageYOffset < 400) {
+    } else if (window.pageYOffset < 250) {
         element.classList.remove("nav-fixed");
         element.classList.remove("nav-hidden");
     }

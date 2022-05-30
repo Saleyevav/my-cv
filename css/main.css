@@ -140,11 +140,13 @@ h6 {
 
 .nav-fixed {
     width: 100%;
+    z-index: 1;
     background-color: #fff;
     position:fixed;
     left: 0;
     top: 0px;
     transition: top 1s; 
+    
 }
 
 .active {
