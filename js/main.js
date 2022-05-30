@@ -29,16 +29,15 @@ document.addEventListener('scroll', throttle(function () {
     if (window.pageYOffset > 250) {
         if (delta > 0) {
             console.log("down " + delta);
-            element.classList.remove("nav-fixed");
-            element.classList.add("nav-hidden");
+            element.classList.remove("nav-scroll-active");
+            element.classList.add("nav-scroll");
         } else if (delta < 0) {
             console.log("up " + delta);
-            element.classList.remove("nav-hidden");
-            element.classList.add("nav-fixed");
+            element.classList.add("nav-scroll-active");
         }
     } else if (window.pageYOffset < 250) {
-        element.classList.remove("nav-fixed");
-        element.classList.remove("nav-hidden");
+        element.classList.remove("nav-scroll-active");
+        element.classList.remove("nav-scroll");
     }
     y = window.pageYOffset;
 }, 500));

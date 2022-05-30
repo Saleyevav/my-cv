@@ -73,6 +73,7 @@ h6 {
     flex-direction: column;
     justify-content: space-between;
     max-width: 780px;
+    min-height: 160px;
 }
 
 .main-title>h1 {
@@ -131,22 +132,18 @@ h6 {
     box-shadow: 5px 5px 10px #2226292f;
 }
 
-.nav-hidden {  
+.nav-scroll {  
+    width: 100%;
     position:fixed;
+    z-index: 1;
     left: 0;
+    background-color: #fff;
     top: -70px;
-    transition: top 1s; 
+    transition: top .3s; 
 }
 
-.nav-fixed {
-    width: 100%;
-    z-index: 1;
-    background-color: #fff;
-    position:fixed;
-    left: 0;
-    top: 0px;
-    transition: top 1s; 
-    
+.nav-scroll-active {   
+    top: 0px;  
 }
 
 .active {
