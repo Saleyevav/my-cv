@@ -112,6 +112,7 @@ h6 {
     margin: 50px 0px 15px 15px;
 }
 
+
 .nav {
     display: flex;
 }
@@ -128,6 +129,22 @@ h6 {
 .nav-item:hover {
     color: #86C232;
     box-shadow: 5px 5px 10px #2226292f;
+}
+
+.nav-hidden {  
+    position:fixed;
+    left: 0;
+    top: -70px;
+    transition: top 1s; 
+}
+
+.nav-fixed {
+    width: 100%;
+    background-color: #fff;
+    position:fixed;
+    left: 0;
+    top: 0px;
+    transition: top 1s; 
 }
 
 .active {
