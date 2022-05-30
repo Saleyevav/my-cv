@@ -40,7 +40,7 @@ document.addEventListener('scroll', throttle(function () {
         element.classList.remove("nav-scroll");
     }
     y = window.pageYOffset;
-}, 500));
+}, 100));
 
 
 
