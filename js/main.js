@@ -55,11 +55,11 @@ document.addEventListener('scroll', throttle(function () {
         if (delta > 0) {
             console.log("down " + delta);
             element.classList.remove("nav-fixed");
-            element.classList.toggle("nav-hidden");
+            element.classList.add("nav-hidden");
         } else if (delta < 0) {
             console.log("up " + delta);
             element.classList.remove("nav-hidden");
-            element.classList.toggle("nav-fixed");
+            element.classList.add("nav-fixed");
         }
     } else if (window.pageYOffset < 400) {
         element.classList.remove("nav-fixed");
