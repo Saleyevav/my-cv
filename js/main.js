@@ -25,14 +25,11 @@ let y = 0;
 document.addEventListener('scroll', throttle(function () {
     element = document.getElementById("navBar");
     let delta = window.pageYOffset - y;
-
     if (window.pageYOffset > 250) {
         if (delta > 0) {
-            console.log("down " + delta);
             element.classList.remove("nav-scroll-active");
             element.classList.add("nav-scroll");
         } else if (delta < 0) {
-            console.log("up " + delta);
             element.classList.add("nav-scroll-active");
         }
     } else if (window.pageYOffset < 250) {
@@ -43,5 +40,17 @@ document.addEventListener('scroll', throttle(function () {
 }, 100));
 
 
+let buttons = document.querySelectorAll('a[href^="#"]');
 
-
+for (let btn of buttons){
+    btn.onclick = function(e){
+        e.preventDefault();
+        href = btn.getAttribute('href');
+        let anchor = document.querySelector('a[name$="'+href.slice(1)+'"]');
+        anchor.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+        
+    }
+}
