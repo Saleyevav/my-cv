@@ -6,6 +6,11 @@ body {
     font-family: 'ProximaNova-Regular';
     line-height: 1.42857143;
 }
+header{
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+}
 
 p {
     margin: 0;
@@ -57,7 +62,7 @@ h6 {
     border-radius: 50%;
     width: 262px;
     position: relative;
-    top: -135px;
+    top: 135px;
 }
 
 .main-title {
@@ -186,10 +191,29 @@ h6 {
 }
 
 .intro {
-    font-size: 42px;
-    color: #86C232;
-    margin-top: 75px;
+    flex-grow: 1;
+    height: auto;
+    display: flex;
+}
+
+.intro .text-container{
+    display: flex;
+    align-items: center;
+}
+
+.intro p{
     font-weight: 700;
+    text-transform: uppercase;
+}
+
+.my-name {
+    
+    font-size: 6vh;
+}
+
+.hi {
+    font-size: 20vh;
+    
 }
 
 .row {
