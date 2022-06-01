@@ -6,9 +6,10 @@ body {
     font-family: 'ProximaNova-Regular';
     line-height: 1.42857143;
 }
-header{
+
+header {
     height: 100vh;
-    display: flex; 
+    display: flex;
     flex-direction: column;
 }
 
@@ -137,18 +138,18 @@ h6 {
     box-shadow: 5px 5px 10px #2226292f;
 }
 
-.nav-scroll {  
+.nav-scroll {
     width: 100%;
-    position:fixed;
+    position: fixed;
     z-index: 1;
     left: 0;
     background-color: #fff;
     top: -70px;
-    transition: top .3s; 
+    transition: top .3s;
 }
 
-.nav-scroll-active {   
-    top: 0px;  
+.nav-scroll-active {
+    top: 0px;
 }
 
 .active {
@@ -194,26 +195,26 @@ h6 {
     flex-grow: 1;
     height: auto;
     display: flex;
+    justify-content: center;
+
 }
 
-.intro .text-container{
+.intro .text-container {
     display: flex;
     align-items: center;
 }
 
-.intro p{
+.intro p {
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .my-name {
-    
-    font-size: 6vh;
+    font-size: 4vw;
 }
 
 .hi {
-    font-size: 20vh;
-    
+    font-size: 12vw;
 }
 
 .row {

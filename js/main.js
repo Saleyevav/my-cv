@@ -42,15 +42,28 @@ document.addEventListener('scroll', throttle(function () {
 
 let buttons = document.querySelectorAll('a[href^="#"]');
 
-for (let btn of buttons){
-    btn.onclick = function(e){
+for (let btn of buttons) {
+    btn.onclick = function (e) {
         e.preventDefault();
         href = btn.getAttribute('href');
-        let anchor = document.querySelector('a[name$="'+href.slice(1)+'"]');
+        let anchor = document.querySelector('a[name$="' + href.slice(1) + '"]');
         anchor.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-        
+            behavior: 'smooth',
+            block: 'start'
+        });
+
     }
 }
+
+function typeWriter(id, speed, txt, i) {
+
+    if (i < txt.length) {
+        document.getElementById(id).innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed, id, speed, txt, i);
+    }
+}
+
+typeWriter('hi', 500, 'hi', 0);
+setTimeout(typeWriter, 1000, 'my-name', 50, 'my name is alexandr', 0);
+setTimeout(typeWriter, 2800, 'i-am', 50, 'i am a web developer', 0);
