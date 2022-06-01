@@ -209,12 +209,17 @@ h6 {
     text-transform: uppercase;
 }
 
+.intro .and {
+    font-size: 2vw;
+    text-align: center;
+}
+
 .my-name {
     font-size: 4vw;
 }
 
 .hi {
-    font-size: 12vw;
+    font-size: 16vw;
 }
 
 .row {
@@ -314,7 +319,7 @@ h6 {
     header {
         height: 90vh;
     }
-    
+
     .wrapper {
         padding-left: 15px;
         padding-right: 15px;
