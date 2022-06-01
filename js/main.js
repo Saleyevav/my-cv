@@ -59,13 +59,6 @@ for (let btn of buttons) {
     }
 }
 
-let download = document.getElementById('downloadCVbtn');
-download.onclick = function (e) {
-    window.scrollTo({
-        behavior: 'smooth',
-        top: 100
-    });
-}
 
 function typeWriter(id, speed, txt, i) {
 
