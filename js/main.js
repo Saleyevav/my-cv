@@ -23,18 +23,18 @@ const throttle = (func, limit) => {
 
 let y = 0;
 document.addEventListener('scroll', throttle(function () {
+    console.log(window.pageYOffset)
     element = document.getElementById("navBar");
     let delta = window.pageYOffset - y;
-    if (window.pageYOffset > 600) {
+    if (window.pageYOffset > 700) {
         if (delta > 0) {
             element.classList.remove("nav-scroll-active");
             element.classList.add("nav-scroll");
         } else if (delta < 0) {
             element.classList.add("nav-scroll-active");
         }
-    } else if (window.pageYOffset < 600) {
-        element.classList.remove("nav-scroll-active");
-        element.classList.remove("nav-scroll");
+    } else if (window.pageYOffset < 700) {
+         element.classList.remove("nav-scroll-active");
     }
     y = window.pageYOffset;
 }, 100));
