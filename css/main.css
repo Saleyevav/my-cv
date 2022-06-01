@@ -202,21 +202,16 @@ h6 {
 .intro .text-container {
     display: flex;
     align-items: center;
-    min-width: 61vw;
+    min-width: 70vw;
 }
 
-.intro p {
+.intro{
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.intro .and {
-    font-size: 2vw;
-    text-align: center;
-}
-
 .my-name {
-    font-size: 4vw;
+    font-size: 5vw;
 }
 
 .hi {
