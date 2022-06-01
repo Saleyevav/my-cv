@@ -25,14 +25,14 @@ let y = 0;
 document.addEventListener('scroll', throttle(function () {
     element = document.getElementById("navBar");
     let delta = window.pageYOffset - y;
-    if (window.pageYOffset > 250) {
+    if (window.pageYOffset > 600) {
         if (delta > 0) {
             element.classList.remove("nav-scroll-active");
             element.classList.add("nav-scroll");
         } else if (delta < 0) {
             element.classList.add("nav-scroll-active");
         }
-    } else if (window.pageYOffset < 250) {
+    } else if (window.pageYOffset < 600) {
         element.classList.remove("nav-scroll-active");
         element.classList.remove("nav-scroll");
     }
