@@ -311,6 +311,10 @@ h6 {
 
 
 @media (max-width: 622px) {
+    header {
+        height: 90vh;
+    }
+    
     .wrapper {
         padding-left: 15px;
         padding-right: 15px;
@@ -350,6 +354,7 @@ h6 {
 
     .container {
         padding-bottom: 20px;
+        min-height: 100px;
     }
 
     .main-title {
