@@ -28,7 +28,6 @@ ul {
 
 h3 {
     font-size: 24px;
-    color: #474B4F;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -188,6 +187,24 @@ h6 {
 
 .dark-theme a {
     color: #1472ff;
+    text-decoration: none;
+}
+
+.white-theme {
+    /* color: #61892F; */
+    font-weight: 700;
+}
+
+.white-theme h3{
+    color: #474B4F;
+}
+.white-theme span{
+    font-weight: 400;
+}
+
+.white-theme a {
+    color: #1472ff;
+    font-weight: 400;
     text-decoration: none;
 }
 
