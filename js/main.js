@@ -65,5 +65,5 @@ function typeWriter(id, speed, txt, i) {
 }
 
 typeWriter('hi', 500, 'hi', 0);
-setTimeout(typeWriter, 1000, 'my-name', 50, 'my name is alexandr', 0);
-setTimeout(typeWriter, 2200, 'i-am', 50, 'i am a web developer', 0);
+setTimeout(typeWriter, 1000, 'my-name', 100, 'my name is alex', 0);
+setTimeout(typeWriter, 3200, 'i-am', 100, 'i am a web developer', 0);

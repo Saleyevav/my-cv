@@ -202,7 +202,7 @@ h6 {
 .intro .text-container {
     display: flex;
     align-items: center;
-    min-width: 70vw;
+    min-width: 58vw;
 }
 
 .intro{
@@ -212,11 +212,16 @@ h6 {
 }
 
 .my-name {
-    font-size: 4vw;
+    font-size: 5vw;
+    line-height: 1;
 }
 
 .hi {
-    font-size: 14vw;
+    font-size: 12vw;
+}
+
+.i-am {
+    font-size: 3.8vw;
 }
 
 .row {
