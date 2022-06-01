@@ -8,8 +8,8 @@ body {
 }
 
 header {
-    position:fixed;
-    top:0;
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -209,10 +209,11 @@ h6 {
     background-color: #fff;
 }
 
-.white-theme h3{
+.white-theme h3 {
     color: #474B4F;
 }
-.white-theme span{
+
+.white-theme span {
     font-weight: 400;
 }
 
@@ -236,7 +237,7 @@ h6 {
     min-width: 58vw;
 }
 
-.intro{
+.intro {
     font-family: 'Anton', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
