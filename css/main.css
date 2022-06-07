@@ -20,6 +20,10 @@ header {
   flex-direction: column;
 }
 
+.white {
+  background-color: #fff;
+}
+
 .content {
   /* margin-top: 100vh; */
   position: relative;
