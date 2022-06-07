@@ -1,9 +1,8 @@
 "use strict";
 const canvas = document.getElementById("canvasRain");
 const ctx = canvas.getContext("2d");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight - 270;
-console.log(window.innerWidth + "x" + window.innerHeight);
+canvas.width = canvas.clientWidth;
+canvas.height = canvas.clientHeight;
 
 let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
 gradient.addColorStop(0, "red");
@@ -77,7 +76,7 @@ function animate(timeStamp) {
 
   requestAnimationFrame(animate);
 }
-ctx.fillSyle = "#222629";
+ctx.fillSyle = "#000";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 animate(0);
 
