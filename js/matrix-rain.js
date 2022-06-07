@@ -2,15 +2,16 @@
 const canvas = document.getElementById("canvasRain");
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = window.innerHeight - 270;
+console.log(window.innerWidth + "x" + window.innerHeight);
 
-// let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-// gradient.addColorStop(0, "red");
-// gradient.addColorStop(0.2, "yellow");
-// gradient.addColorStop(0.4, "green");
-// gradient.addColorStop(0.6, "cyan");
-// gradient.addColorStop(0.8, "blue");
-// gradient.addColorStop(1, "magenta");
+let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+gradient.addColorStop(0, "red");
+gradient.addColorStop(0.2, "yellow");
+gradient.addColorStop(0.4, "green");
+gradient.addColorStop(0.6, "cyan");
+gradient.addColorStop(0.8, "blue");
+gradient.addColorStop(1, "magenta");
 function Symbol(x, y, fontSize, canvasHeight) {
   this.characters =
     "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -23,7 +24,7 @@ function Symbol(x, y, fontSize, canvasHeight) {
     this.text = this.characters.charAt(
       Math.floor(Math.random() * this.characters.length)
     );
-    context.fillStyle = "green";
+    context.fillStyle = gradient;
     context.fillText(this.text, this.x * this.fontSize, this.y * this.fontSize);
     if (this.y * this.fontSize > this.canvasHeight && Math.random() > 0.98) {
       this.y = 0;
@@ -56,7 +57,7 @@ function Effect(canvasWidth, canvasHeight) {
 
 const effect = new Effect(canvas.width, canvas.height);
 let lastTime = 0;
-const fps = 15;
+const fps = 30;
 const nextFrame = 1000 / fps;
 let timer = 0;
 
