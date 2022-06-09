@@ -90,16 +90,18 @@ h6 {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
+}
+.stub {
+  position: relative;
 }
 
 .my-photo {
   border-radius: 50%;
   width: 262px;
-  position: relative;
+  position: absolute;
   z-index: 1;
-  top: 135px;
+  top: 10px;
 }
 
 .main-title {
@@ -107,6 +109,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 10px;
 }
 
 .container {
@@ -115,14 +118,13 @@ h6 {
   flex-direction: column;
   justify-content: space-between;
   max-width: 780px;
-  min-height: 160px;
+  /* min-height: 160px; */
 }
 
 .main-title > h1 {
   font-size: 14px;
   color: #474b4f;
   font-weight: normal;
-  margin-top: 50px;
 }
 
 .btns {
@@ -140,7 +142,7 @@ h6 {
   color: #fff;
   text-align: center;
   font-size: 14px;
-  margin: 50px 15px 15px 15px;
+  /* margin: 50px 15px 15px 15px; */
 }
 
 .btn:hover {
@@ -152,7 +154,8 @@ h6 {
 }
 
 .btn:last-child {
-  margin: 50px 0px 15px 15px;
+  /* margin: 50px 0px 15px 15px; */
+  margin-left: 10px;
 }
 
 .nav {
@@ -193,11 +196,6 @@ h6 {
   box-shadow: 5px 5px 10px #222629d2;
 }
 
-.container {
-  padding-top: 20px;
-  padding-bottom: 80px;
-}
-
 .dark-theme {
   position: relative;
   background-color: #222629;
@@ -209,6 +207,7 @@ h6 {
 }
 
 .dark-theme h3 {
+  margin-top: 0;
   font-size: 24px;
   color: #61892f;
   font-weight: 400;
@@ -216,9 +215,6 @@ h6 {
 }
 
 .dark-theme .container {
-  border-top: 1px solid #474b4f;
-  padding-top: 20px;
-  padding-bottom: 80px;
 }
 
 .dark-theme a {
@@ -233,6 +229,7 @@ h6 {
 
 .white-theme h3 {
   color: #474b4f;
+  margin-top: 0;
 }
 
 .white-theme span {
@@ -287,10 +284,6 @@ h6 {
 
 .row .item:first-child {
   width: 66%;
-}
-
-.footer {
-  padding-top: 80px;
 }
 
 .menu-button {
@@ -364,6 +357,7 @@ h6 {
 
   .btn:last-child {
     margin-top: 15px;
+    margin-left: 0;
   }
 }
 
