@@ -145,8 +145,8 @@ const instance = canvasBubbles("canvasBubbles", {
   colorSet: ["", "#ffffff", "#ffffff", "#ffffff"],
   mouseRadius: 100,
   countBubbles: 500,
-  minRadius: 7,
-  maxRadius: 20,
+  minRadius: 1,
+  maxRadius: 1,
   count: 10,
 });
 
