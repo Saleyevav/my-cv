@@ -125,8 +125,9 @@ const canvasBubbles = (function () {
     const bubbles = generateBubbles();
 
     function animate() {
-      context.clearRect(0, 0, canvas.width, canvas.height);
-
+      //context.clearRect(0, 0, canvas.width, canvas.height);
+      context.fillStyle = "rgb(0,0,0,0.05)";
+      context.fillRect(0, 0, canvas.width, canvas.height);
       for (let bubble of bubbles) {
         bubble.setMouseXY(mouseX, mouseY);
         bubble.move();
