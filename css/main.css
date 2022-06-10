@@ -93,13 +93,18 @@ h6 {
 }  */
 
 .wrapper {
-  position: relative;
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 40px;
 }
+
+.experience {
+  position: relative;
+  z-index: 2;
+}
+
 .stub {
   position: relative;
 }
