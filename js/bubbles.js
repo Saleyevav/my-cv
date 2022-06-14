@@ -160,3 +160,15 @@ const instance = canvasBubbles("canvasBubbles", {
 });
 
 instance();
+
+const instance2 = canvasBubbles("canvasBubblesMini", {
+  colorSet: ["", "#d32821", "#53a66f", "#5db5f8"],
+  mouseRadius: 20,
+  countBubbles: 100,
+  minRadius: 1,
+  maxRadius: 3,
+  maxSpeed: 0.5,
+  resizeMaxRadius: 5,
+});
+
+instance2();
