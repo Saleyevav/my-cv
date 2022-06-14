@@ -149,26 +149,3 @@ const canvasBubbles = (function () {
     };
   };
 })();
-
-const instance = canvasBubbles("canvasBubbles", {
-  colorSet: ["", "#ffffff", "#ffffff", "#ffffff"],
-  mouseRadius: 100,
-  countBubbles: 500,
-  minRadius: 1,
-  maxRadius: 1,
-  trail: true,
-});
-
-instance();
-
-const instance2 = canvasBubbles("canvasBubblesMini", {
-  colorSet: ["", "#d32821", "#53a66f", "#5db5f8"],
-  mouseRadius: 20,
-  countBubbles: 100,
-  minRadius: 1,
-  maxRadius: 3,
-  maxSpeed: 0.5,
-  resizeMaxRadius: 5,
-});
-
-instance2();

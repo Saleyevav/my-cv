@@ -165,20 +165,3 @@ const bubblesConnection = (function () {
     };
   };
 })();
-
-const bubConnection = bubblesConnection("bubblesConnection", {
-  colorSet: ["", "#000000"],
-  minRadius: 1,
-  maxRadius: 2,
-  threshold: 150,
-});
-
-bubConnection();
-
-const bubConnectionMini = bubblesConnection("bubblesConnectionMini", {
-  colorSet: ["", "#000000"],
-  minRadius: 1,
-  maxRadius: 1,
-  threshold: 30,
-});
-bubConnectionMini();
