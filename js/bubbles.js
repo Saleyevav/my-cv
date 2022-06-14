@@ -6,6 +6,9 @@ const canvasBubbles = (function () {
     countBubbles: 500,
     minRadius: 7,
     maxRadius: 20,
+    maxSpeed: 3,
+    resizeMaxRadius: 50,
+    trail: false,
   };
 
   function getOpacity(radius, maxRadius) {
@@ -19,7 +22,7 @@ const canvasBubbles = (function () {
   function random(min, max) {
     let result = 0;
     while (!result) {
-      result = Math.floor(Math.random() * (max - min)) + min;
+      result = Math.random() * (max - min) + min;
     }
     return result;
   }
@@ -28,15 +31,18 @@ const canvasBubbles = (function () {
     const { maxRadius, minRadius } = options;
     const colorSet = options.colorSet;
     const mouseRadius = options.mouseRadius;
+    const resizeMaxRadius = options.resizeMaxRadius;
+    const maxSpeed = options.maxSpeed;
     let mouseX = 0;
     let mouseY = 0;
     let x = random(maxRadius, canvas.width - maxRadius);
     let y = random(maxRadius, canvas.height - maxRadius);
-    let dx = random(-3, 3);
-    let dy = random(-3, 3);
-    let radius = random(minRadius, maxRadius);
+    let dx = random(-maxSpeed, maxSpeed);
+    let dy = random(-maxSpeed, maxSpeed);
+    let radius = Math.floor(random(minRadius, maxRadius));
     const startRadius = radius;
-    const nativeColor = colorSet[random(1, colorSet.length)];
+
+    const nativeColor = colorSet[Math.floor(random(1, colorSet.length))];
     let color = nativeColor + getOpacity(radius, maxRadius);
     const startColor = color;
 
@@ -55,7 +61,7 @@ const canvasBubbles = (function () {
         y < mouseY + mouseRadius
       ) {
         color = nativeColor;
-        if (radius < 50) {
+        if (radius < resizeMaxRadius) {
           radius += 3;
         }
       } else {
@@ -88,7 +94,6 @@ const canvasBubbles = (function () {
     };
   }
 
-  //---------------------------------------------------------------------
   return function (canvasId, clientOptions) {
     const options = {
       ...defaultOptions,
@@ -124,9 +129,13 @@ const canvasBubbles = (function () {
     const bubbles = generateBubbles();
 
     function animate() {
-      //context.clearRect(0, 0, canvas.width, canvas.height);
-      context.fillStyle = "rgb(0,0,0,0.05)";
-      context.fillRect(0, 0, canvas.width, canvas.height);
+      if (!options.trail) {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+      } else {
+        context.fillStyle = "rgba(0, 0, 0, 0.05)";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+      }
+
       for (let bubble of bubbles) {
         bubble.setMouseXY(mouseX, mouseY);
         bubble.move();
@@ -147,6 +156,7 @@ const instance = canvasBubbles("canvasBubbles", {
   countBubbles: 500,
   minRadius: 1,
   maxRadius: 1,
+  trail: true,
 });
 
 instance();
