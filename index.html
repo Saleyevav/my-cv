@@ -10,18 +10,19 @@
 </head>
 
 <body>
+    <a name="home" class="home"></a>
     <nav id='navBar' class="nav-scroll nav">
         <a href="#home" class="nav-item active">Home</a>
         <a href="#about" class="nav-item">About</a>
         <a href="#skills" class="nav-item">Skills</a>
-        <a href="#education" class="nav-item">Education</a>
-        <a href="#experience" class="nav-item">Experience</a>
         <a href="#code-examples" class="nav-item">Code Examples</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#education" class="nav-item">Education</a>
+        
     </nav>
     <header class="header">
-
         <div class="white">
-
+            
             <div class="mobile-nav">
                 <div class="mobile-nav-container">
                     <div class="menu-button"></div>
@@ -32,9 +33,9 @@
                     <a href="#home" class="mobile-nav-item">Home</a>
                     <a href="#about" class="mobile-nav-item">About</a>
                     <a href="#skills" class="mobile-nav-item">Skills</a>
-                    <a href="#education" class="mobile-nav-item">Education</a>
-                    <a href="#experience" class="mobile-nav-item">Experience</a>
                     <a href="#code-examples" class="mobile-nav-item">Code Examples</a>
+                    <a href="#experience" class="mobile-nav-item">Experience</a>
+                    <a href="#education" class="mobile-nav-item">Education</a>
                 </div>
             </div>
             <div class="wrapper">
@@ -59,9 +60,9 @@
                         <a href="#home" class="nav-item active">Home</a>
                         <a href="#about" class="nav-item">About</a>
                         <a href="#skills" class="nav-item">Skills</a>
-                        <a href="#education" class="nav-item">Education</a>
-                        <a href="#experience" class="nav-item">Experience</a>
                         <a href="#code-examples" class="nav-item">Code Examples</a>
+                        <a href="#experience" class="nav-item">Experience</a>
+                        <a href="#education" class="nav-item">Education</a>
                     </nav>
 
                 </div>
@@ -180,27 +181,43 @@
         <div class="white-theme">
             <div class="wrapper">
                 <div class="content-title">
-                    <a name="education"></a>
-                    <h3>Education</h3>
+                    <a name="code-examples"></a>
+                    <h3>Code Examples</h3>
                 </div>
-
+    
                 <div class="container">
-                    <ul>
-                        <li><a href="https://www.vlsu.ru/">Vladimir State University, 2005-2010</a></li>
-                        <li>specialization: <span>Sequrity of information</span> </li>
-                    </ul>
-                    <ul>
-                        <li><span>Mechanical engineering college, Kirzhach, 2001-2005</span> </li>
-                        <li>specialization: <span> Software & automated systems</span> </li>
-                    </ul>
-                    <h6>Certificates:</h6>
-                    <a href="https://stepik.org/cert/96405" target="_blank">Bioinformatics Institute: Python basics and
-                        application</a>
-                    <a href="https://stepik.org/cert/71462" target="_blank">Bioinformatics Institute: Python
-                        programming</a>
-                    <a href="https://stepik.org/cert/79851" target="_blank">Mail.ru: Web technologies</a>
+                    <div class="row">
+                        <div class="item">
+                            <h5>Bubble-canvas</h5>
+                            <canvas id="canvasBubblesMini" class="canvas-mini"></canvas><br>
+                            <a href="https://github.com/Saleyevav/bubble-canvas" target="_blank">github.com</a><br>
+                            <a href="https://codesandbox.io/s/bubble-canvas-c12nv1" target="_blank">codesandbox.io</a>
+                        </div>
+                        <div class="item">
+                            <h5>Bubbles-connection</h5>
+                            <canvas id="bubblesConnectionMini" class="canvas-mini"></canvas><br>
+                            <a href="https://github.com/Saleyevav/bubbles-connection" target="_blank">github.com</a><br>
+                            <a href="https://codesandbox.io/s/bubbles-connect-usdzj9" target="_blank">codesandbox.io</a>
+                        </div>
+    
+                    </div>
+    
+                    <div class="row">
+                        <div class="item">
+                            <h5>Matrix-rain</h5>
+                            <canvas id="canvasRainMini" class="canvas-mini"></canvas><br>
+                            <a href="https://github.com/Saleyevav/matrix-rain" target="_blank">github.com</a><br>
+                            <a href="https://codesandbox.io/s/matrix-rain-ok0gjw" target="_blank">codesandbox.io</a>
+                          
+                        </div>
+                        <div class="item">
+                            
+                        </div>
+                    </div>
+    
                 </div>
             </div>
+            
         </div>
         <div class="dark-theme">
             <canvas id="bubblesConnection" class="bubbles-connection"></canvas>
@@ -258,40 +275,25 @@
     <footer class="footer white-theme">
         <div class="wrapper">
             <div class="content-title">
-                <a name="code-examples"></a>
-                <h3>Code Examples</h3>
+                <a name="education"></a>
+                <h3>Education</h3>
             </div>
 
             <div class="container">
-                <div class="row">
-                    <div class="item">
-                        <h5>Bubble-canvas</h5>
-                        <canvas id="canvasBubblesMini" class="canvas-mini"></canvas><br>
-                        <a href="https://github.com/Saleyevav/bubble-canvas" target="_blank">github.com</a><br>
-                        <a href="https://codesandbox.io/s/bubble-canvas-c12nv1" target="_blank">codesandbox.io</a>
-                    </div>
-                    <div class="item">
-                        <h5>Bubbles-connection</h5>
-                        <canvas id="bubblesConnectionMini" class="canvas-mini"></canvas><br>
-                        <a href="https://github.com/Saleyevav/bubbles-connection" target="_blank">github.com</a><br>
-                        <a href="https://codesandbox.io/s/bubbles-connect-usdzj9" target="_blank">codesandbox.io</a>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="item">
-                        <h5>Matrix-rain</h5>
-                        <canvas id="canvasRainMini" class="canvas-mini"></canvas><br>
-                        <a href="https://github.com/Saleyevav/matrix-rain" target="_blank">github.com</a><br>
-                        <a href="https://codesandbox.io/s/matrix-rain-ok0gjw" target="_blank">codesandbox.io</a>
-                      
-                    </div>
-                    <div class="item">
-                        
-                    </div>
-                </div>
-
+                <ul>
+                    <li><a href="https://www.vlsu.ru/">Vladimir State University, 2005-2010</a></li>
+                    <li>specialization: <span>Sequrity of information</span> </li>
+                </ul>
+                <ul>
+                    <li><span>Mechanical engineering college, Kirzhach, 2001-2005</span> </li>
+                    <li>specialization: <span> Software & automated systems</span> </li>
+                </ul>
+                <h6>Certificates:</h6>
+                <a href="https://stepik.org/cert/96405" target="_blank">Bioinformatics Institute: Python basics and
+                    application</a>
+                <a href="https://stepik.org/cert/71462" target="_blank">Bioinformatics Institute: Python
+                    programming</a>
+                <a href="https://stepik.org/cert/79851" target="_blank">Mail.ru: Web technologies</a>
             </div>
         </div>
     </footer>
