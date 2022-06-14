@@ -6,7 +6,6 @@ const canvasBubbles = (function () {
     countBubbles: 500,
     minRadius: 7,
     maxRadius: 20,
-    count: 10,
   };
 
   function getOpacity(radius, maxRadius) {
@@ -148,7 +147,6 @@ const instance = canvasBubbles("canvasBubbles", {
   countBubbles: 500,
   minRadius: 1,
   maxRadius: 1,
-  count: 10,
 });
 
 instance();

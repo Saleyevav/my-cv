@@ -110,5 +110,7 @@ const matrixRain = (function () {
 })();
 
 const matrix = matrixRain("canvasRain");
+const matrixMini = matrixRain("canvasRainMini", { fontSize: 8, fps: 14 });
 
 matrix();
+matrixMini();

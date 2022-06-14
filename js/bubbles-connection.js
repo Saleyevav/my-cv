@@ -174,3 +174,11 @@ const bubConnection = bubblesConnection("bubblesConnection", {
 });
 
 bubConnection();
+
+const bubConnectionMini = bubblesConnection("bubblesConnectionMini", {
+  colorSet: ["", "#000000"],
+  minRadius: 1,
+  maxRadius: 1,
+  threshold: 30,
+});
+bubConnectionMini();
