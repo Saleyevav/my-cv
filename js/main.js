@@ -21,7 +21,7 @@ const bubConnectionMini = bubblesConnection("bubblesConnectionMini", {
 });
 bubConnectionMini();
 
-const instance = canvasBubbles("canvasBubbles", {
+const canvasBub = canvasBubbles("canvasBubbles", {
   colorSet: ["", "#ffffff", "#ffffff", "#ffffff"],
   mouseRadius: 100,
   countBubbles: 500,
@@ -29,9 +29,9 @@ const instance = canvasBubbles("canvasBubbles", {
   maxRadius: 1,
   trail: true,
 });
-instance();
+canvasBub();
 
-const instance2 = canvasBubbles("canvasBubblesMini", {
+const canvasBubMini = canvasBubbles("canvasBubblesMini", {
   colorSet: ["", "#d32821", "#53a66f", "#5db5f8"],
   mouseRadius: 20,
   countBubbles: 100,
@@ -40,7 +40,7 @@ const instance2 = canvasBubbles("canvasBubblesMini", {
   maxSpeed: 0.5,
   resizeMaxRadius: 5,
 });
-instance2();
+canvasBubMini();
 
 const matrix = matrixRain("canvasRain");
 const matrixMini = matrixRain("canvasRainMini", { fontSize: 8, fps: 14 });
