@@ -1,4 +1,3 @@
-setScrollListener = scrollListener();
 scrollListener();
 
 typeWriter("hi", 500, "hi", 0);
